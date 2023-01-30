@@ -15,6 +15,13 @@
     </tr>
   {% endfor %}
 </table>
+<form method="post">
+  {% csrf_token %}
+       <label for="Email address">Email address:</label>
+       <input type="text" name="email" placeholder="Email address">
+       <br>
+       <button type="submit">Send CSV</button>
+</form>
 </pre>
 </body>
 </html>
